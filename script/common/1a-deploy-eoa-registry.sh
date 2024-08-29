@@ -61,6 +61,7 @@ set_rpc_url() {
         80002) RPC_URL=$RPC_URL_AMOY_POLYGON ;;
         97) RPC_URL=$RPC_URL_BSC_TESTNET ;;
         43113) RPC_URL=$RPC_URL_FUJI_AVALANCHE ;;
+        531050104) RPC_URL=$RPC_URL_SOPHON_TESTNET ;;
         *) echo "Unsupported chain id"; exit 1 ;;
     esac
 

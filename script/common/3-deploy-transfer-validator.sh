@@ -61,6 +61,7 @@ set_rpc_url() {
         80002) RPC_URL=$RPC_URL_AMOY_POLYGON ;;
         97) RPC_URL=$RPC_URL_BSC_TESTNET ;;
         43113) RPC_URL=$RPC_URL_FUJI_AVALANCHE ;;
+        531050104) RPC_URL=$RPC_URL_SOPHON_TESTNET ;;
         *) echo "Unsupported chain id"; exit 1 ;;
     esac
 
@@ -99,6 +100,7 @@ set_etherscan_api_key() {
       80002) ETHERSCAN_API_KEY=$VERIFICATION_API_KEY_POLYGON ;;
       97) ETHERSCAN_API_KEY=$VERIFICATION_API_KEY_BSC ;;
       43113) ETHERSCAN_API_KEY=$VERIFICATION_API_KEY_ETHEREUM ;; #Avalanche C-Chain
+      531050104) ETHERSCAN_API_KEY=$VERIFICATION_API_KEY_SOPHON_TESTNET ;;
       *) echo "Unsupported chain id"; exit 1 ;;
   esac
 
@@ -158,4 +160,5 @@ forge script script/common/DeployValidator.s.sol:DeployValidator \
   --rpc-url $RPC_URL \
   --broadcast \
   --optimizer-runs 777 \
-  --verify $RESUME
+  -- zksync
+  # --verify $RESUME 
