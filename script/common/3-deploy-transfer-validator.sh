@@ -160,5 +160,5 @@ forge script script/common/DeployValidator.s.sol:DeployValidator \
   --rpc-url $RPC_URL \
   --broadcast \
   --optimizer-runs 777 \
-  -- zksync
+  --zksync
   # --verify $RESUME 
