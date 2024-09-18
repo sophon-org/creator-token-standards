@@ -9,7 +9,7 @@ import {CreatorTokenTransferValidatorConfiguration} from "./CreatorTokenTransfer
 import "@limitbreak/permit-c/PermitC.sol";
 import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
 import "@openzeppelin/contracts/utils/structs/EnumerableSet.sol";
-import "@opensea/tstorish/Tstorish.sol";
+import "./Tstorish.sol";
 
 /**
  * @title  CreatorTokenTransferValidator

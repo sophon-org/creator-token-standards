@@ -3,7 +3,6 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 test = 'tests'
-cache_path  = 'forge-cache'
 
 solc_version = "0.8.24"
 evm_version = "cancun"
