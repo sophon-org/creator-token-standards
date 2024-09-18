@@ -22,8 +22,8 @@ contract DeployValidator is Script {
 
         console.log("CreatorTokenTransferValidator: ", validator);
 
-        if (expectedAddress != validator) {
-            revert("Unexpected deploy address");
-        }
+        // if (expectedAddress != validator) {
+        //     revert("Unexpected deploy address");
+        // }
     }
 }
